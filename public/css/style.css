@@ -60,3 +60,7 @@ footer.page-footer {
   border-style: solid;
   border-color: black;
 }
+
+.black {
+  border-color: black;
+}
