@@ -64,3 +64,40 @@ footer.page-footer {
 .brown {
   border-color: black;
 }
+
+.justifyLeft {
+  display: flex;
+  justify-content: flex-start;
+}
+.justifyRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleHead {
+  opacity: 0.70;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+footer .copy {
+  display: flex;
+  justify-content: space-between;
+    margin-right: 5rem;
+}
+footer .iconFoot {
+  display: flex;
+  justify-content: center;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+
+footer address {
+  display: flex;
+  justify-content: flex-end;
+    margin-left: 2rem;
+}

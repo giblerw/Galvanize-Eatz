@@ -21,6 +21,9 @@ function changeHighlightBack(event) {
   event.target.classList.remove('brown');
   }
 }
-
+//counter reset
+function resetQuantity(){
+    $(".quantity").val(1);
+}
 // var addMenuItem = document.getElementsByClassName('add-item');
   // addMenuItem.addEventListener('load', function())
