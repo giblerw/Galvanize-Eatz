@@ -46,6 +46,7 @@ function menuCreation(menu){
           foodTitleSP.innerHTML = titleHeadSP
         var psp = menuArray['4'].price;
           foodPriceSP.innerHTML = `$` + psp
+          attachEventHandlers();
       }
 window.addEventListener('load', menuCreation(), false);
     })
