@@ -1,5 +1,5 @@
 
-const foodSelect = document.getElementsByClassName('btn');
+let foodSelect = document.getElementsByClassName('foodButton');
   foodSelect[0].addEventListener('click', changeHighlight)
   foodSelect[1].addEventListener('click', changeHighlight)
   foodSelect[2].addEventListener('click', changeHighlight)
@@ -12,12 +12,13 @@ function changeHighlight(event) {
 
 var foodDeSelect = document.getElementsByClassName('brown');
   foodDeSelect[0].addEventListener('click', changeHighlightBack)
-  foodDeSelect[1].addEventListener('click', changeHighlightBack)
-  foodDeSelect[2].addEventListener('click', changeHighlightBack)
-  foodDeSelect[3].addEventListener('click', changeHighlightBack)
-  foodDeSelect[4].addEventListener('click', changeHighlightBack)
+  // foodDeSelect[1].addEventListener('click', changeHighlightBack)
+  // foodDeSelect[2].addEventListener('click', changeHighlightBack)
+  // foodDeSelect[3].addEventListener('click', changeHighlightBack)
+  // foodDeSelect[4].addEventListener('click', changeHighlightBack)
 
 function changeHighlightBack(event) {
+  event.preventDefault();
   event.target.classList.remove('brown');
   }
 }

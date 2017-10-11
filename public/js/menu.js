@@ -10,11 +10,11 @@ fetch(getURL)
 
 // Create Menu Items
 function menuCreation(menu){
-    var foodTitleHB = document.getElementById('hb');
-    var foodTitleCB = document.getElementById('cb');
-    var foodTitleCP = document.getElementById('cp');
-    var foodTitlePP = document.getElementById('pp');
-    var foodTitleSP = document.getElementById('sp');
+    var foodTitleHB = document.getElementsByClassName('hb')[0];
+    var foodTitleCB = document.getElementsByClassName('cb')[0];
+    var foodTitleCP = document.getElementsByClassName('cp')[0];
+    var foodTitlePP = document.getElementsByClassName('pp')[0];
+    var foodTitleSP = document.getElementsByClassName('sp')[0];
 
     var foodPriceHB = document.getElementById('priceHB');
     var foodPriceCB = document.getElementById('priceCB');

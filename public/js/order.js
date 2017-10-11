@@ -3,6 +3,7 @@
 
 function updateCart(order){
     let cartBody = document.getElementsByClassName('cart')[0];
+    console.log(cartBody);
     cartBody.empty();
 //creates an order from selected items
     for (var i = 0; i < order.items.length; i++){
