@@ -7,7 +7,6 @@ fetch(getURL)
     return response.json()
     .then(function(e) {
       var menuArray = e.menu
-
 // Create Menu Items
 function menuCreation(menu){
     var foodTitleHB = document.getElementsByClassName('hb')[0];
@@ -46,7 +45,6 @@ function menuCreation(menu){
           foodTitleSP.innerHTML = titleHeadSP
         var psp = menuArray['4'].price;
           foodPriceSP.innerHTML = `$` + psp
-          attachEventHandlers();
       }
 window.addEventListener('load', menuCreation(), false);
     })

@@ -104,3 +104,12 @@ footer address {
   justify-content: flex-end;
     margin-left: 2rem;
 }
+
+table .shopCart {
+  border: 20px, solid, brown;
+}
+
+.orderForm {
+  display: flex;
+  justify-content: space-around;
+}

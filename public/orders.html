@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Galvanize Eats</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,400italic" rel="stylesheet" type="text/css">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
+
 <body>
+<!-- navbar -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="http://galvanize.html" class="brand-logo">Galvanize Eats</a>
@@ -25,7 +28,7 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
+<!-- banner -->
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -40,103 +43,116 @@
     </div>
     <div class="parallax"><img src="media/restaurant-hero-image.jpg" alt="Unsplashed background img 1"></div>
   </div>
-
-<form>
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">pregnant_woman</i></h2>
-            <h5 class="center">Choose the food...</h5>
-            <ul class="collapsible" data-collapsible="accordion">
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">add</i>Burgers</div>
-                  <div class="collapsible-body">
-                    <a class="waves-effect waves-light btn foodButton hb" ></a>
-                    <p class='priceSpot'id='priceHB'></p>
-                    <a class="waves-effect waves-light btn foodButton cb"></a>
-                    <p class='priceSpot'id='priceCB'></p>
+<!-- main container -->
+    <div class="container">
+      <div class="section">
+        <div class="row">
+<!-- menu -->
+          <div class="col s12 m4 orderForm">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">pregnant_woman</i></h2>
+              <h5 class="center">Choose the food...</h5>
+                <p></p>
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">add</i>Burgers</div>
+                      <div class="collapsible-body">
+                        <a class="waves-effect waves-light btn foodButton hb brown"></a>
+                        <p class='priceSpot' id='priceHB'></p>
+                        <a class="waves-effect waves-light btn foodButton cb"></a>
+                        <p class='priceSpot' id='priceCB'></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">add</i>Pizza</div>
+                      <div class="collapsible-body">
+                        <a class="waves-effect waves-light btn foodButton cp"></a>
+                        <p class='priceSpot' id='priceCP'></p>
+                        <a class="waves-effect waves-light btn foodButton pp"></a>
+                        <p class='priceSpot' id='pricePP'></p>
+                        <a class="waves-effect waves-light btn foodButton sp"></a>
+                        <p class='priceSpot' id='priceSP'></p>
+                      </div>
+                    </li>
+                  </ul>
+            </div>
+          </div>
+<!-- order quantity -->
+          <div class="col s12 m4 orderForm">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+              <h5 class="center">...Quantity Desired...</h5>
+              <div class="order-input-quantity">
+                <section>
+                  <div class="item-input">
+                    <span class="quantity-wrapper">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" name="quantity" min="1" max="100" value="1" class="quantity">
+                    </span>
+                    <button type="click" class="add-cart">Add Item</button>
                   </div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">add</i>Pizza</div>
-                  <div class="collapsible-body">
-                    <a class="waves-effect waves-light btn foodButton cp"></a>
-                    <p class='priceSpot'id='priceCP'></p>
-                    <a class="waves-effect waves-light btn foodButton pp"></a>
-                    <p class='priceSpot'id='pricePP'></p>
-                    <a class="waves-effect waves-light btn foodButton sp"></a>
-                    <p class='priceSpot'id='priceSP'></p>
-                  </div>
-                </li>
-              </ul>
-
+                </section>
+              </div>
+            </div>
+          </div>
+<!-- personal form -->
+          <div class="col s12 m4 orderForm">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+              <h5 class="center">...Personal Info</h5>
+              <form class="customer-information" action="https://galvanize-eats-api.herokuapp.com/orders" method="post">
+                <section>
+                  <label for="name">Name</label>
+                  <input name="name" type="text" required="required">
+                  <label for="phone">Phone Number</label>
+                  <input name="phone" type="text" required="required">
+                  <label for="address">Address</label>
+                  <input name="address" type="text" required="required">
+                  <input type="submit" class="submit-order" value="Deliver It!">
+                </section>
+              </form>
+            </div>
           </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">...Quantity Desired...</h5>
-
-            <div class="order-input">
-                    <section class="items">
-                        <h6>Menu</h6>
-                        <div class="item-selector"></div>
-                        <div class="item-input">
-                            <span class="quantity-wrapper">
-                                <label for="quantity">Quantity</label>
-                                <input type="number" name="quantity" min="1" max="100" value="1" class="quantity">
-                            </span>
-                            <button class="add-item">Add Item</button>
-                        </div>
-                    </section>
-          </div>
         </div>
       </div>
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">...Personal Info</h5>
-              <section class="customer-information">
-                        <label for="name">Name</label>
-                        <input name="name" type="text" required="required">
-                        <label for="phone">Phone Number</label>
-                        <input name="phone" type="text" required="required">
-                        <label for="address">Address</label>
-                        <input name="address" type="text" required="required">
-                        <input type="submit" class="submit-order" value="Deliver It!">
-                    </section>
-
-          </div>
-        </div>
-
-
-    </div>
-  </div>
-</form>
-
-
-
+<!-- cart -->
   <div class="container">
     <div class="section">
-
       <div class="row">
         <div class="col s12 center cart">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Shopping Cart</h4>
-          <p class="left-align light"> Nothing yet</p>
+          <table class='shopCart'>
+            <tbody class="cartAdditions"></tbody>
+
+            <tfoot>
+              <tr class="subtotal">
+                <th>Subtotal</th>
+                <td>
+                  <output>0.00</output>
+                </td>
+              </tr>
+              <tr class="tax">
+                <th>Tax</th>
+                <td>
+                  <output>0.00</output>
+                </td>
+              </tr>
+              <tr class="grand-total">
+                <th>Grand Total</th>
+                <td>
+                  <output>0.00</output>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
         </div>
       </div>
 
     </div>
   </div>
-
-
+<!-- bottom picture -->
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -147,21 +163,22 @@
     </div>
     <div class="parallax"><img src="media/restaurant-hero-image.jpg" alt="Unsplashed background img 3"></div>
   </div>
-
+<!-- footer -->
   <footer class="page-footer teal footer-copyright">
-      <span class="justifyLeft"><b>&copy; Galvanize </b> //Denver-Platte//2017 </span>
-      <span class="iconFoot"><i class="large material-icons">device_hub</i></span>
-      <span class="justifyRight">Made by//<b>Weston's Brain</b></span>
+    <span class="justifyLeft"><b>&copy; Galvanize </b> //Denver-Platte//2017 </span>
+    <span class="iconFoot"><i class="large material-icons">device_hub</i></span>
+    <span class="justifyRight">Made by//<b>Weston's Brain</b></span>
   </footer>
 
 
 
   <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/order.js"></script>
-    <script src="js/form.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/order.js"></script>
+</body>
+
 </html>

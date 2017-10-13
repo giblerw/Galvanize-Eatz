@@ -16,8 +16,3 @@ function Selector() {
 }
 
 window.addEventListener('load', Selector(), false);
-
-//counter reset
-function resetQuantity() {
-  $(".quantity").val(1);
-}
