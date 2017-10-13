@@ -57,21 +57,23 @@
                     <li>
                       <div class="collapsible-header"><i class="material-icons">add</i>Burgers</div>
                       <div class="collapsible-body">
+
                         <a class="waves-effect waves-light btn foodButton hb brown"></a>
-                        <p class='priceSpot' id='priceHB'></p>
+                        <p class='priceSpot priceHB'></p>
+
                         <a class="waves-effect waves-light btn foodButton cb"></a>
-                        <p class='priceSpot' id='priceCB'></p>
+                        <p class='priceSpot priceCB'></p>
                       </div>
                     </li>
                     <li>
                       <div class="collapsible-header"><i class="material-icons">add</i>Pizza</div>
                       <div class="collapsible-body">
                         <a class="waves-effect waves-light btn foodButton cp"></a>
-                        <p class='priceSpot' id='priceCP'></p>
+                        <p class='priceSpot priceCP'></p>
                         <a class="waves-effect waves-light btn foodButton pp"></a>
-                        <p class='priceSpot' id='pricePP'></p>
+                        <p class='priceSpot pricePP'></p>
                         <a class="waves-effect waves-light btn foodButton sp"></a>
-                        <p class='priceSpot' id='priceSP'></p>
+                        <p class='priceSpot priceSP'></p>
                       </div>
                     </li>
                   </ul>
@@ -89,7 +91,7 @@
                         <label for="quantity">Quantity</label>
                         <input type="number" name="quantity" min="1" max="100" value="1" class="quantity">
                     </span>
-                    <button type="click" class="add-cart">Add Item</button>
+                    <button type="click" class="waves-effect waves-light btn add-cart">Add Item</button>
                   </div>
                 </section>
               </div>
@@ -108,7 +110,7 @@
                   <input name="phone" type="text" required="required">
                   <label for="address">Address</label>
                   <input name="address" type="text" required="required">
-                  <input type="submit" class="submit-order" value="Deliver It!">
+                  <input type="submit" class="waves-effect waves-light btn submit-order" value="Deliver It!">
                 </section>
               </form>
             </div>
@@ -121,11 +123,22 @@
     <div class="section">
       <div class="row">
         <div class="col s12 center cart">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Shopping Cart</h4>
+          <h3 class="mdi-content-send brown-text">Shopping Cart</h3>
+          <div class="row">
           <table class='shopCart'>
-            <tbody class="cartAdditions"></tbody>
-
+            <tbody>
+            <div class='col s8 m10 l10'>
+              <tr class="titleAdd">
+              <th class='cartAdditions'></th>
+              <td>
+                <output class='priceAdditions'></output>
+              </td>
+            </tr>
+          </div>
+            <!-- <div class='col s4 m2 l2 priceAdditions right-align'></div> -->
+            </tbody>
+          </div>
+        </div>
             <tfoot>
               <tr class="subtotal">
                 <th>Subtotal</th>

@@ -113,3 +113,11 @@ table .shopCart {
   display: flex;
   justify-content: space-around;
 }
+
+.grand-total {
+  font-size: 20px;
+}
+
+#cartUnderline {
+  border: 10px, solid, black;
+}

@@ -15,14 +15,14 @@ function menuCreation(menu){
     var foodTitlePP = document.getElementsByClassName('pp')[0];
     var foodTitleSP = document.getElementsByClassName('sp')[0];
 
-    var foodPriceHB = document.getElementById('priceHB');
-    var foodPriceCB = document.getElementById('priceCB');
-    var foodPriceCP = document.getElementById('priceCP');
-    var foodPricePP = document.getElementById('pricePP');
-    var foodPriceSP = document.getElementById('priceSP');
+    var foodPriceHB = document.getElementsByClassName('priceHB')[0];
+    var foodPriceCB = document.getElementsByClassName('priceCB')[0];
+    var foodPriceCP = document.getElementsByClassName('priceCP')[0];
+    var foodPricePP = document.getElementsByClassName('pricePP')[0];
+    var foodPriceSP = document.getElementsByClassName('priceSP')[0];
 //Hamburger
       var titleHeadHB = menuArray['2'].name;
-          foodTitleHB.innerHTML = titleHeadHB
+          foodTitleHB.innerHTML = titleHeadHB;
         var phb = menuArray['2'].price;
           foodPriceHB.innerHTML = `$` + phb;
 //Cheesebuger

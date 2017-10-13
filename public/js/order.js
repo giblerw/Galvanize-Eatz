@@ -8,7 +8,7 @@ var selectedFoodButton = document.getElementsByClassName('add-cart');
 addButton = selectedFoodButton[0].addEventListener('click', function(event) {
   event.preventDefault();
     addFoodToCart();
-    // addPriceToCart();
+    addPriceToCart();
     // updateTotals();
     resetQuantity();
 
@@ -17,19 +17,25 @@ addButton = selectedFoodButton[0].addEventListener('click', function(event) {
   function addFoodToCart() {
     var selectedFoodObject = document.getElementsByClassName('brown');
     var selectedTitle = selectedFoodObject[0];
-    h3Tag = selectedTitle.innerHTML;
+    h5Tag = selectedTitle.innerHTML;
     var cartEl = document.getElementsByClassName('cartAdditions')[0];
     var multiply = document.getElementsByClassName('quantity')[0].value;
 // loop append
     for (var i = 0; i < multiply; i++) {
 
-      var cartTitleEl = document.createElement('h3');
-      cartTitleEl.append(h3Tag);
+      var cartTitleEl = document.createElement('h5');
+      cartTitleEl.append(h5Tag);
       cartEl.append(cartTitleEl);
 
 }
     return cartEl;
 }
+
+function addPriceToCart() {
+  var selectedFoodPrice = document.getElementsByClassName('brown')[0];
+  console.log(selectedFoodPrice);
+}
+
 //counter reset
 function resetQuantity() {
   document.getElementsByClassName('quantity')[0].value = 1;
