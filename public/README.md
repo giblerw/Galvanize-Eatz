@@ -9,25 +9,7 @@ DEPLOYED URL:
 
 ## Import stories into Pivotal Tracker
 
-Import this [CSV](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/595/Q1_Project_Stories-Galvanize_Eats.csv) into a new project in Pivotal Tracker to get the requirements for this story. The new project should be prefixed with your cohort number. They are sorted into two epics that roughly align with the two pages, and they are prioritized. You may find it useful to size the stories before you begin.
-
-## Use the Galvanize Eats repo as a base
-
-Fork/clone [this repo](https://github.com/gSchool/galvanize-eats). You are required to use this repo and keep this folder structure.
-
-## APIs
-
-The project involves two API calls. The first, to get the menu data should be a GET request to this url: [https://galvanize-eats-api.herokuapp.com/menu](https://galvanize-eats-api.herokuapp.com/menu). The second request, to post an order, should be a POST request to this url: [https://galvanize-eats-api.herokuapp.com/orders](https://galvanize-eats-api.herokuapp.com/orders).
-
-Your post request should submit the user order. When you have successfully hit the POST api you will see "Congratulations!".
-
-## Notes
-
-* Use a CSS Framework of your choice
-* You can use jQuery or plain JavaScript for DOM manipulation
-* Does not have to be responsive
-* Use feature-branch workflows
-* Deploy your work
+Import this [CSV](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/595/Q1_Project_Stories-Galvanize_Eats.csv) into a new project in Pivotal Tracker to get the requirements for this story. They are sorted into two epics that roughly align with the two pages, and they are prioritized. You may find it useful to size the stories before you begin.
 
 ## Mockups
 
