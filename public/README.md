@@ -1,4 +1,4 @@
-# Galvanize Eats
+
 
 DEPLOYED URL:
 # https://gfoods64.firebaseapp.com
