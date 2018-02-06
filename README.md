@@ -1,7 +1,7 @@
 # eatZ
 
 DEPLOYED URL:
-### **https://gfoods64.firebaseapp.com**
+### **https://letzeatz.firebaseapp.com/**
 
 ## Background
 
