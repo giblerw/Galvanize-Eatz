@@ -78,7 +78,16 @@ footer.page-footer {
 }
 
 .titleHead {
-  opacity: 0.70;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+}
+
+.titleFoot {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+
 }
 /* Footer */
 footer {

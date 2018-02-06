@@ -9,7 +9,9 @@ DEPLOYED URL:
 
 ## APIs
 
-The project involves two API calls. The first, to get the menu data a GET request is sent to this url: [https://galvanize-eats-api.herokuapp.com/menu](https://galvanize-eats-api.herokuapp.com/menu). The second request, to post an order, a POST request is sent to this url: [https://galvanize-eats-api.herokuapp.com/orders](https://galvanize-eats-api.herokuapp.com/orders).
+The project involves two API calls.
+* The first, to get the menu data a GET request is sent to this url: [https://galvanize-eats-api.herokuapp.com/menu](https://galvanize-eats-api.herokuapp.com/menu).
+* The second request, to post an order, a POST request is sent to this url: [https://galvanize-eats-api.herokuapp.com/orders](https://galvanize-eats-api.herokuapp.com/orders).
 
 ## Notes
 
